@@ -1,0 +1,104 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Books{% endblock title %}
+{% block heading %}Books{% endblock heading %}
+{% block content %}
+
+	<!-- products -->
+	<div class="product-section mt-150 mb-150">
+		<div class="container">
+
+			<div class="row">
+                <div class="col-md-12">
+                    <div class="product-filters">
+                        <ul>
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".strawberry">NCERT</li>
+                            <li data-filter=".berry">Chitra</li>
+                            <li data-filter=".lemon">X-am idea</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+			<div class="row product-lists">
+				<div class="col-lg-4 col-md-6 text-center strawberry">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img src="{% static 'app/assets/img/products/book-1.jpg' %}" alt=""></a>
+						</div>
+						<h3>NCERT</h3>
+						<p class="product-price"><span>Per Kg</span> 85$ </p>
+						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center berry">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img src="{% static 'app/assets/img/products/book-2.jpg' %}" alt=""></a>
+						</div>
+						<h3>Chitra</h3>
+						<p class="product-price"><span>Per Kg</span> 70$ </p>
+						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center lemon">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img src="{% static 'app/assets/img/products/book-3.jpg' %}" alt=""></a>
+						</div>
+						<h3>X-am idea</h3>
+						<p class="product-price"><span>Per Kg</span> 35$ </p>
+						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img src="{% static 'app/assets/img/products/book-4.jpg' %}" alt=""></a>
+						</div>
+						<h3>R.S Agarwal</h3>
+						<p class="product-price"><span>Per Kg</span> 50$ </p>
+						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img src="{% static 'app/assets/img/products/book-5.jpg' %}" alt=""></a>
+						</div>
+						<h3>S.L Arora</h3>
+						<p class="product-price"><span>Per Kg</span> 45$ </p>
+						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center strawberry">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img src="{% static 'app/assets/img/products/book-6.jpg' %}" alt=""></a>
+						</div>
+						<h3>NCERT</h3>
+						<p class="product-price"><span>Per Kg</span> 80$ </p>
+						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<div class="pagination-wrap">
+						<ul>
+							<li><a href="#">Prev</a></li>
+							<li><a href="#">1</a></li>
+							<li><a class="active" href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">Next</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end products -->
+
+{% endblock content %}

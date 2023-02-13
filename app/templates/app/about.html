@@ -1,0 +1,90 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+{% block heading %}About Us{% endblock heading %}
+{% block headingpara %}A digital agency for all academic solution{% endblock headingpara %}
+{% block content %}
+	
+	{% comment %} who we are section of about page {% endcomment %}
+		<div class="row justify-content-center">
+			<div class="col-5 mt-5">
+				<h3 style="font-size:40px">who we <span class="orange-text" >are</span></h3> 
+				<p>Edumates Pvt Ltd is country's first academic solution provider which understand the needs of our young and dynamic edupreneurs and help them execute their dreams.</p>
+				<br>
+				<p>We are companion to our partners and accompany them in achieving their vision. Extending our services to the schools and educational institutions, cater to their entire requirements under one roof. Our support system provides you with the pedagogy developed by our distinguished academicians, designed & customised culminations by the best professionals, preparing academic curriculum & planers, providing Books and Stationery of all premier publications, extending support in resources, recruitment, training & onboarding, launch segment based Marketing & promotional campaign on digital & non-digital platforms. As to support the set up and launching of new schools, we bring upon the widest range of educational products and services on table with extensive expertise and knowledge in the domain. EDUMATES</p>			</div>
+			<div class="col-4 mt-5 ">
+			  <img src="{% static 'app/assets/img/about-us.jpg' %}" alt="">
+			</div>
+		</div>
+	{% comment %} who we are section of about page {% endcomment %}
+
+
+	{% comment %} why us section of about page  {% endcomment %}
+	<div class="container mt-5 ">
+		<h3 style="font-size:40px">Why<span class="orange-text"> us</span></h3>
+		<h5>
+			Edumates provides free Digital Marketing Support to your School <br><br>
+			Edumates provides personalised Books & Stational with your School name and Branding from india's best Publications and Manufacturers <br><br>
+			Edumates provides all customized furnitures like Chairs, Benches, Office Chairs, Office Furniures from india's best Manufacturers. <br><br>
+		</h5>
+		<h5>
+			We are companion to our partners and accompany them in achieving their vision. Extending our services to the schools and educational institutions, cater to their entire requirements under one roof. Our support system provides you with the pedagogy developed by our distinguished academicians, designed & customised culminations by the best professionals, preparing academic curriculum & planers, providing Books and Stationery of all premier publications, extending support in resources, recruitment, training & onboarding, launch segment based Marketing & promotional campaign on digital & non-digital platforms. As to support the set up and launching of new schools, we bring upon the widest range of educational products and services on table with extensive expertise and knowledge in the domain. EDUMATES.
+		</h5>
+    </div>
+	{% comment %} why us section of about page  {% endcomment %}
+
+
+	<!-- team section -->
+	<div class="mt-150 mb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="section-title">
+						<h3>Our <span class="orange-text">Team</span></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="single-team-item">
+						<div class="team-bg team-bg-1"></div>
+						<h4>Jimmy Doe <span>Farmer</span></h4>
+						<ul class="social-link-team">
+							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-team-item">
+						<div class="team-bg team-bg-2"></div>
+						<h4>Marry Doe <span>Farmer</span></h4>
+						<ul class="social-link-team">
+							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+					<div class="single-team-item">
+						<div class="team-bg team-bg-3"></div>
+						<h4>Simon Joe <span>Farmer</span></h4>
+						<ul class="social-link-team">
+							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end team section -->
+
+	
+{% endblock content %}
+
+	

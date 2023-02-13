@@ -1,0 +1,367 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+
+	<!-- title -->
+	<title>Edumates</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="{% static 'app/assets/img/mainlogo.jpg' %}">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="{% static 'app/assets/css/allmin.css' %}">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="{% static 'app/assets/bootstrap/css/bootstrapmain.css' %}">
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="{% static 'app/assets/css/owl.carousel.css' %}">
+	<!-- magnific popup -->
+	<link rel="stylesheet" href="{% static 'app/assets/css/magnific-popup.css' %}">
+	<!-- animate css -->
+	<link rel="stylesheet" href="{% static 'app/assets/css/animate.css' %}">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="{% static 'app/assets/css/meanmenu.min.css' %}">
+	<!-- main style -->
+	<link rel="stylesheet" href="{% static 'app/assets/css/main.css' %}">
+	<!-- responsive -->
+	<link rel="stylesheet" href="{% static 'app/assets/css/responsive.css' %}">
+
+</head>
+<body>
+	
+	<!--PreLoader-->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!--PreLoader Ends-->
+	
+	<!-- header -->
+	<div class="top-header-area" id="sticker">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 text-center">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="index.html">
+								<img src="{% static 'app/assets/img/mainlogo.jpg' %}" alt="" width="80px" height="80px" >
+							</a>
+						</div>
+						<!-- logo -->
+
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul>
+								<li class="current-list-item"><a href="{% url 'home' %}">Home</a></li>
+								<li ><a href="{% url 'about' %}">About</a></li>
+								<li><a href="{% url 'services' %}">Services</a></li>
+								<li><a href="#">Pages</a>
+									<ul class="sub-menu">
+										<li><a href="404.html">404 page</a></li>
+										<li><a href="{% url 'about' %}">About</a></li>
+										<li><a href="{% url 'cart' %}">Cart</a></li>
+										<li><a href="checkout.html">Check Out</a></li>
+										<li><a href="{% url 'contact' %}">Contact</a></li>
+										<li><a href="{% url 'news' %}">News</a></li>
+										{% comment %} <li><a href="{% url 'shop' %}">Shop</a></li> {% endcomment %}
+									</ul>
+								</li>
+								<li><a href="{% url 'news' %}">News</a>
+									<ul class="sub-menu">
+										<li><a href="{% url 'news' %}">News</a></li>
+										<li><a href="{% url 'news' %}">Single News</a></li>
+									</ul>
+								</li>
+								<li><a href="{% url 'contact' %}">Contact</a></li>
+								<li><a href="#">Shop</a>
+									<ul class="sub-menu">
+										<li><a href="{% url 'books' %}">Books</a></li>
+										<li><a href="{% url 'stationary' %}">Stationary</a></li>
+										<li><a href="checkout.html">Check Out</a></li>
+										<li><a href="single-product.html">Single Product</a></li>
+										<li><a href="{% url 'cart' %}">Cart</a></li>
+									</ul>
+								</li>
+								<li>
+									<div class="header-icons">
+										<a class="shopping-cart" href="{% url 'cart' %}"><i class="fas fa-shopping-cart"></i></a>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+						<div class="mobile-menu"></div>
+						<!-- menu end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+	
+
+	
+
+	<!-- hero area -->
+	<div class="hero-area hero-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 offset-lg-2 text-center">
+					<div class="hero-text">
+						<div class="hero-text-tablecell">
+							<h1>Best Quality products by Edumates</h1>
+							<div class="hero-btns">
+								<a href="shop.html" class="boxed-btn">Fruit Collection</a>
+								<a href="contact.html" class="bordered-btn">Contact Us</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end hero area -->
+
+	<!-- features list section -->
+	<div class="list-section pt-80 pb-80">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+					<div class="list-box d-flex align-items-center">
+						<div class="list-icon">
+							<i class="fas fa-shipping-fast"></i>
+						</div>
+						<div class="content">
+							<h3>Free Shipping</h3>
+							<p>When order over $75</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+					<div class="list-box d-flex align-items-center">
+						<div class="list-icon">
+							<i class="fas fa-phone-volume"></i>
+						</div>
+						<div class="content">
+							<h3>24/7 Support</h3>
+							<p>Get support all day</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="list-box d-flex justify-content-start align-items-center">
+						<div class="list-icon">
+							<i class="fas fa-sync"></i>
+						</div>
+						<div class="content">
+							<h3>Refund</h3>
+							<p>Get refund within 3 days!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- end features list section -->
+
+	<!-- product section -->
+	<div class="product-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="section-title">	
+						<h3><span class="orange-text">Our</span> Product</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="single-product-item">
+						<div class="product-image ">
+							<a href="{% url 'single_product' %}"><img src="{% static 'app/assets/img/products/book-1.jpg' %}" alt=""></a>
+						</div>
+						<h3>Strawberry</h3>
+						<p class="product-price"><span>Per Kg</span> 85$ </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'single_product' %}"><img src="{% static 'app/assets/img/products/book-2.jpg' %}" alt=""></a>
+						</div>
+						<h3>Berry</h3>
+						<p class="product-price"><span>Per Kg</span> 70$ </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="{% url 'single_product' %}"><img src="{% static 'app/assets/img/products/book-3.jpg' %}" alt=""></a>
+						</div>
+						<h3>Lemon</h3>
+						<p class="product-price"><span>Per Kg</span> 35$ </p>
+						<a href="{% url 'cart' %}" class="cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end product section -->
+
+
+	<div class="product-section mt-15 mb-15">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="section-title">	
+						<h3><span class="orange-text">About</span> Us</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+	{% comment %} who we are section of about page {% endcomment %}
+	<div class="row justify-content-center">
+		<div class="col-5 mt-2">
+			<h3 style="font-size:40px">Who we <span class="orange-text" >are</span></h3> 
+			<p>Edumates Pvt Ltd is country's first academic solution provider which understand the needs of our young and dynamic edupreneurs and help them execute their dreams.</p>
+			<br>
+			<p>We are companion to our partners and accompany them in achieving their vision. Extending our services to the schools and educational institutions, cater to their entire requirements under one roof. Our support system provides you with the pedagogy developed by our distinguished academicians, designed & customised culminations by the best professionals, preparing academic curriculum & planers, providing Books and Stationery of all premier publications, extending support in resources, recruitment, training & onboarding, launch segment based Marketing & promotional campaign on digital & non-digital platforms. As to support the set up and launching of new schools, we bring upon the widest range of educational products and services on table with extensive expertise and knowledge in the domain. EDUMATES</p>	
+		</div>
+		<div class="col-4 mt-5 ">
+		  <img src="{% static 'app/assets/img/about-us.jpg' %}" alt="">
+		</div>
+	</div>
+{% comment %} who we are section of about page {% endcomment %}
+
+
+{% comment %} why us section of about page  {% endcomment %}
+<div class="container mt-5 mb-5">
+	<h3 style="font-size:40px">Why<span class="orange-text"> us</span></h3>
+	<h5>
+		Edumates provides free Digital Marketing Support to your School <br><br>
+		Edumates provides personalised Books & Stational with your School name and Branding from india's best Publications and Manufacturers <br><br>
+		Edumates provides all customized furnitures like Chairs, Benches, Office Chairs, Office Furniures from india's best Manufacturers. <br><br>
+	</h5>
+	<h5>
+		We are companion to our partners and accompany them in achieving their vision. Extending our services to the schools and educational institutions, cater to their entire requirements under one roof. Our support system provides you with the pedagogy developed by our distinguished academicians, designed & customised culminations by the best professionals, preparing academic curriculum & planers, providing Books and Stationery of all premier publications, extending support in resources, recruitment, training & onboarding, launch segment based Marketing & promotional campaign on digital & non-digital platforms. As to support the set up and launching of new schools, we bring upon the widest range of educational products and services on table with extensive expertise and knowledge in the domain. EDUMATES.
+	</h5>
+</div>
+{% comment %} why us section of about page  {% endcomment %}
+
+
+
+	
+
+	<!-- footer -->
+	<div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box about-widget">
+						<h2 class="widget-title">About us</h2>
+						<p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box get-in-touch">
+						<h2 class="widget-title">Get in Touch</h2>
+						<ul>
+							<li>34/8, East Hukupara, Gifirtok, Sadan.</li>
+							<li>support@fruitkha.com</li>
+							<li>+00 111 222 3333</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box pages">
+						<h2 class="widget-title">Pages</h2>
+						<ul>
+							<li><a href="{% url 'home' %}">Home</a></li>
+							<li><a href="{% url 'about' %}">About</a></li>
+							<li><a href="{% url 'shop' %}">Shop</a></li>
+							<li><a href="{% url 'news' %}">News</a></li>
+							<li><a href="{% url 'contact' %}">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box subscribe">
+						<h2 class="widget-title">Subscribe</h2>
+						<p>Subscribe to our mailing list to get the latest updates.</p>
+						<form action="index.html">
+							<input type="email" placeholder="Email">
+							<button type="submit"><i class="fas fa-paper-plane"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+	
+	<!-- copyright -->
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.<br>
+						Distributed By - <a href="https://themewagon.com/">Themewagon</a>
+					</p>
+				</div>
+				<div class="col-lg-6 text-right col-md-12">
+					<div class="social-icons">
+						<ul>
+							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+							<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end copyright -->
+	
+	<!-- jquery -->
+	<script src="{% static 'app/assets/js/jquery-1.11.3.min.js' %}"></script>
+	<!-- bootstrap -->
+	<script src="{% static 'app/assets/bootstrap/js/bootstrap.min.js' %}"></script>
+	<!-- count down -->
+	<script src="{% static 'app/assets/js/jquery.countdown.js' %}"></script>
+	<!-- isotope -->
+	<script src="{% static 'app/assets/js/jquery.isotope-3.0.6.min.js' %}"></script>
+	<!-- waypoints -->
+	<script src="{% static 'app/assets/js/waypoints.js' %}"></script>
+	<!-- owl carousel -->
+	<script src="{% static 'app/assets/js/owl.carousel.min.js' %}"></script>
+	<!-- magnific popup -->
+	<script src="{% static 'app/assets/js/jquery.magnific-popup.min.js' %}"></script>
+	<!-- mean menu -->
+	<script src="{% static 'app/assets/js/jquery.meanmenu.min.js' %}"></script>
+	<!-- sticker js -->
+	<script src="{% static 'app/assets/js/sticker.js' %}"></script>
+	<!-- main js -->
+	<script src="{% static 'app/assets/js/main.js' %}"></script>
+
+</body>
+</html>
